@@ -14,6 +14,7 @@ namespace LinesCounter
             Console.WriteLine($"Physical lines of code: {result.PhysicalLines}");
             Console.WriteLine($"Logical lines of code: {result.LogicalLines}");
             Console.WriteLine($"Comment lines of code: {result.CommentLines}");
+            Console.WriteLine($"Commenting level: {(double)result.CommentLines/result.CodeLines}");
             Console.WriteLine($"Empty lines of code: {result.EmptyLines}");
 
         }
