@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace LinesCounter
 {
@@ -6,7 +7,17 @@ namespace LinesCounter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string defaultDir = @"D:\projects\repos\sharpgl";
+            var cloc = new CLOC();
+            var result = cloc.CountNumberOfLinesInCSFilesOfDirectory(defaultDir);
+            Console.WriteLine($"Total lines of code: {result.CodeLines}");
+            Console.WriteLine($"Physical lines of code: {result.PhysicalLines}");
+            Console.WriteLine($"Logical lines of code: {result.LogicalLines}");
+            Console.WriteLine($"Comment lines of code: {result.CommentLines}");
+            Console.WriteLine($"Empty lines of code: {result.EmptyLines}");
+
         }
+
+        
     }
 }
