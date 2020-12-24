@@ -16,6 +16,7 @@ namespace LinesCounter
             Console.WriteLine($"Comment lines of code: {result.CommentLines}");
             Console.WriteLine($"Commenting level: {(double)result.CommentLines/result.CodeLines}");
             Console.WriteLine($"Empty lines of code: {result.EmptyLines}");
+            //Console.WriteLine($"Curly braces and # lines of code: {result.CurlyBracesAndSharpLines}");
 
         }
 

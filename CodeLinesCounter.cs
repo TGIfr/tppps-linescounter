@@ -12,5 +12,7 @@ namespace LinesCounter
         public int LogicalLines { get; set; }
         public int CommentLines { get; set; }
 
+        //public int CurlyBracesAndSharpLines { get; set; }
+
     }
 }
